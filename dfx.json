@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "solicitud_trabajo_backend": {
+      "main": "src/solicitud_trabajo_backend/main.mo",
+      "type": "motoko"
+    },
+    "solicitud_trabajo_frontend": {
+      "dependencies": [
+        "solicitud_trabajo_backend"
+      ],
+      "source": [
+        "src/solicitud_trabajo_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "solicitud_trabajo_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
